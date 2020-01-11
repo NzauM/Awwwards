@@ -20,6 +20,7 @@ from django.conf.urls import url,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'',include('Ratings.urls')),
     url(r'^accounts/',include('registration.backends.simple.urls')),
   
 ]
