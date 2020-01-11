@@ -31,3 +31,14 @@ class Projects(models.Model):
         '''
         all_projects = cls.objects.all()
         return all_projects
+
+    @classmethod
+    def one_project(cls,id):
+        '''
+        Function to get only one project.
+
+        Args:
+        id: The id of the project
+        '''
+        one_project = cls.objects.filter(id=id)
+        return one_project
