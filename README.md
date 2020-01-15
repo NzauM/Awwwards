@@ -1,4 +1,4 @@
-# @Moments.
+# ~~Allwards~~.
 # Author
 [NzauM](https://github.com/NzauM/Awwwards.git)
 
