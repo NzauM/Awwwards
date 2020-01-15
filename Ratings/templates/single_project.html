@@ -7,7 +7,7 @@
     <div style=padding-top:120px;  ></div>
 
   <div class="row">
-    <div class="col-md-6" style="padding-left: 80px;">
+    <div class=" col-sm-12 col-md-6 " style="padding-left: 80px;">
       <div class="card" style="width:800px">
         <h4 style="text-align: center;" class="card-title pictitle"> {{project.title}} </h4>
         <img class="card-img-top" width="500px" src=" {{project.image.url}}" alt="{{post.name}}">
@@ -29,7 +29,7 @@
 
           {%endfor%}
         </div>
-        <div class="col-md-6">
+        <div class=" col-sm-6 col-md-6 ">
 
           <p><b>Ratings</b></p>
           <p>Design: {{design}}% </p>
@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6 " style="padding-left: 10px;">
+    <div class="col-sm-12 col-md-6 " style="padding-left: 10px;">
         <div class="card" style="width:350px; padding-left: 20px;">
         
       <form action=" {%url 'rates' project.id  %}" method="POST">
@@ -100,3 +100,9 @@
 
 <!-- </div> -->
 {% endblock %}
+<style>
+  @media only screen and (max-width: 1000px) {
+  form{
+    display: block;
+  }
+</style>

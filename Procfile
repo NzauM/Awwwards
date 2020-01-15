@@ -1,0 +1,1 @@
+web: gunicorn Awwwards.wasgi --log-file-
